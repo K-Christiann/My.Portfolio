@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">
+                <span class="gradient-text">Kyle Christian</span>
+            </a>
+    
+            <!-- Toggler for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <i class="fas fa-bars" style="color: var(--accent-color)"></i>
+            </button>
+    
+            <!-- Navbar content -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <!-- Navigation Links -->
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+    
+                <!-- Contact Links -->
+                <div class="d-flex align-items-center contact-links">
+                    <a href="mailto:kaelchristian15@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        <span class="d-none d-lg-inline">kaelchristian15@gmail.com</span>
+                    </a>
+                    <a href="https://github.com/K-Christiann" target="_blank" class="contact-link">
+                        <i class="fab fa-github"></i>
+                        <span class="d-none d-lg-inline">KChristiann</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center">
+        <div class="floating-shapes">
+            <div class="shape" style="width: 100px; height: 100px; left: 10%; animation-delay: 0s;"></div>
+            <div class="shape" style="width: 150px; height: 150px; right: 15%; animation-delay: 2s;"></div>
+            <div class="shape" style="width: 80px; height: 80px; left: 20%; top: 40%; animation-delay: 4s;"></div>
+            <div class="shape" style="width: 120px; height: 120px; right: 25%; top: 60%; animation-delay: 6s;"></div>
+        </div>
+        <div class="container text-center hero-content">
+            <h1 class="hero-title mb-4">Kyle Christian P. Belono</h1>
+            <h2 class="h3 mb-4" style="color: var(--accent-color)">Frontend Developer</h2>
+            <a href="#contact" class="btn btn-glow btn-lg px-5 py-3">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" style="color: var(--accent-color)">Technical Skills</h2>
+            <div class="tech-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <p> HTML, CSS, JavaScript, React</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <p>PHP, Python</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+<section id="projects" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5" style="color: var(--accent-color)">Featured Projects</h2>
+        <div class="grid-container">
+            <!-- Project Card 1 -->
+            <div class="project-card group">
+                <div class="aspect-video">
+                    <img src="./Motivation_WebPost/Assets/Images/gift-habeshaw-QDP10NbwcyE-unsplash.jpg" 
+                         alt="Motivation Web Poster preview" 
+                         class="card-img">
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3 class="gradient-text">Motivation Web Poster</h3>
+                        <a href="./Motivation_WebPost/index.html" 
+                           target="_blank" 
+                           class="external-link"
+                           aria-label="View Motivation Web Poster project">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                    <p class="card-description">
+                        A Motivation Web Poster designed to inspire and motivate users with daily quotes and beautiful imagery.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="project-card group">
+                <div class="aspect-video">
+                    <img src="pictures/MWebsite.jpg" 
+                         alt="MWebsite preview" 
+                         class="card-img">
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3 class="gradient-text">RSchool</h3>
+                        <a href="./MWebsite-main/index.html" 
+                           target="_blank" 
+                           class="external-link"
+                           aria-label="View MWebsite project">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                    <p class="card-description">
+                        A course recommender web application for Senior Highschool Students to help them choose their career path.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">Bootstrap</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Card 3 -->
+            <div class="project-card group">
+                <div class="aspect-video">
+                    <img src="./Mini_proj-main/images/Preview.JPG" 
+                         alt="MLPlatform preview" 
+                         class="card-img">
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3 class="gradient-text">MLPlatform</h3>
+                        <a href="./Mini_proj-main/index.html" 
+                           target="_blank" 
+                           class="external-link"
+                           aria-label="View MLPlatform project">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                    <p class="card-description">
+                        Tutoring Platform designed to make students learn math in a fun way! Interactive lessons and exercises included.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" style="color: var(--accent-color)">Get in Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form class="contact-form">
+                        <div class="mb-4">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-4">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-4">
+                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-glow btn-lg px-5">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script href="main.js"></script>
+</body>
+</html>
