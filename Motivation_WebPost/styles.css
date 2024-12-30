@@ -1,0 +1,35 @@
+body {
+    background-color: #0b2d41c4;
+    margin:0;
+    padding:0;
+    font-family: Arial, sans-serif;
+}
+.header {
+    background-color: #0b2d41c4;
+    color: rgb(243, 234, 234);
+    text-align: center;
+    padding: 10px;
+}
+img {
+    width: 500px;
+    height: 450px;
+    display: block; 
+    margin: 5px auto; 
+    border: 5px solid rgb(184, 179, 179);
+    cursor: pointer;
+}
+h1{
+    font-weight: 500;
+    font-size: 2em;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+    
+}
+p{
+    font-style: italic;
+    font-size: 1em;
+}
+span{
+    font-weight: bold;
+    color:rgb(91, 202, 47);
+}
