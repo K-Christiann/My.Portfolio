@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dash.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Dashboard</title>
+<body>
+    <div class="container">
+      <nav>
+        <ul>
+            <li><a href="#" class = "logo"><img src ="logo.png" alt="">
+            <span class ="nav-item">Dashboard</span>
+            </a></li>
+            <li><a href="website.html">
+                <i class ="fas fa-user"></i>
+                <span class ="nav-item">Profile</span>
+                
+            </a></li>
+            <li><a href="">
+                <i class ="fas fa-chart-bar"></i>
+                <span class ="nav-item">Analytics</span>
+            <li><a href="">
+                <i class ="fas fa-home"></i>
+                <span class ="nav-item">Home</span>
+            </a></li>
+            <li><a href="">
+                <i class ="fas fa-cog"></i>
+                <span class ="nav-item">Settings</span>
+            </a></li>
+            <li><a href="website.html" class="logout">
+                <i class ="fas fa-sign-out-alt"></i>
+                <span class ="nav-item">Logout</span>
+            </a></li>
+        </ul>
+      </nav>
+      <section class ="main">
+        <div class="main-top">
+            <h1>Course Recommender</h1>
+            
+            <i class ="fas fa-user-cog">
+            </i>
+        </div>
+        <div class ="main-courserec">
+            <div class ="course-rec">
+                <i class="fa-solid fa-gear"></i>
+                <h3>STEM</h3>
+                <p>Science, Technology, Engineering and Mathematics (STEM)</p>
+                <button>Proceed to course recommender</button>
+            </div> 
+            <div class ="course-rec">
+                <i class="fa-solid fa-bars-staggered"></i>
+                <h3>GAS</h3>
+                <p>General Academic Strand (GAS)</p>
+                <button>Proceed to course recommender</button>
+            </div>
+            <div class ="course-rec">
+                <i class="fa fa-laptop-code"></i>
+                <h3>TVL</h3>
+                <p>Technical-Vocational Livelihood (TVL)</p>
+                <button>Proceed to course recommender</button>
+            </div>
+            <div class ="course-rec">
+                <i class="fa-solid fa-sheet-plastic"></i>
+                <h3>HUMSS</h3>
+                <p>Humanities and Social Sciences (HUMSS)</p>
+                <button>Proceed to course recommender</button>
+            </div>
+            <div class ="course-rec">
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <h3>ABM</h3>
+                <p>Accountancy, Business, and Management strand (ABM)</p>
+                <button>Proceed to course recommender</button>
+            </div>
+        </div>
+        <h2>Status of Current Enrollees</h2>
+        <section class="main-course">
+            <div class="main-box">
+                <div class="chart">
+                    <canvas id="barchart" width ="500" height="500"></canvas>
+                </div>
+            </div>
+            <div class="main-box">
+                <div class="chart">
+                    <canvas id="doughnut" width ="500" height="500"></canvas>
+                </div>
+            </div>
+        </section>
+      </section>
+      </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src ="style1.js"></script>
+      <script src ="style2.js"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Function to update the progress bar
+            function updateProgressBar() {
+                var inputs = document.querySelectorAll('#studentForm input, #studentForm select, #studentForm textarea');
+                var filledInputs = 0;
+
+                inputs.forEach(function (input) {
+                    if (input.value.trim() !== '') {
+                        filledInputs++;
+                    }
+                });
+
+                var progressBar = document.getElementById('progressBar');
+                var progressValue = (filledInputs / inputs.length) * 100;
+                progressBar.style.width = progressValue + '%';
+                progressBar.innerHTML = Math.round(progressValue) + '%';
+            }
+
+            // Attach the updateProgressBar function to input change event
+            var form = document.getElementById('studentForm');
+            form.addEventListener('input', function () {
+                updateProgressBar();
+            });
+
+            // Attach the updateProgressBar function to the form submission event
+            form.addEventListener('submit', function (event) {
+                // Prevent the form from submitting if inputs are missing
+                if (!checkInputs()) {
+                    event.preventDefault();
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

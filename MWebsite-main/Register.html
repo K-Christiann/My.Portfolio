@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="Register.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+</head>
+
+<body>
+    
+    <div class="wrapper">
+        <form> <!-- Corrected from <from> to <form> -->
+            <h1>Registration</h1>
+        
+             <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Full Name" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Username" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+             </div>
+
+             <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Email" required>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+                <div class="input-field">
+                    <input type="tel" placeholder="Phone Number" required> <!-- Changed type="phone" to type="tel" -->
+                    <i class='bx bxs-phone'></i>
+                </div>
+             </div>
+
+             <div class="input-box">
+                <div class="password">
+                    <input type="password" id="passwordInput" placeholder="Password">
+                    <i id="togglePassword" class='bx bxs-lock-alt'></i>
+                    <div class="visibility-toggle">
+                        <z id="toggleVisibility" class='bx bx-hide'></z>
+                    </div>
+                </div>
+            
+            
+                <div class="password">
+                    <input type="password1" id="passwordInput1" placeholder="Confirm Password">
+                    <i id="togglePassword1" class='bx bxs-lock-alt'></i>
+                    <div class="visibility-toggle">
+                        <z id="toggleVisibility1" class='bx bx-hide'></z>
+                    </div>
+                </div>
+             </div>
+        
+             <script src="Register.js"></script>
+             <label><input type="checkbox"> I hereby declare that the above information provided is true and correct. </label>
+             <a href ="index.html">
+             <button type="submit" class="btn">Register</a></button>
+        </form> 
+    </div>
+
+</body>
+
+</html>

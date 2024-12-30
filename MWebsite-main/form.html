@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formstyle.css">
+    <link rel="stylesheet" href="example.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ioniconcs.esm.js"></script>
+    <title>Your Web Page</title>
+</head>
+<div class="wrapper">
+  <div class="header">
+      <ul>
+          <li class="active form_1_progessbar">
+              <div>
+                  <p>1</p>
+              </div>
+          </li>
+          <li class="form_2_progessbar">
+              <div>
+                  <p>2</p>
+              </div>
+          </li>
+          <li class="form_3_progessbar">
+              <div>
+                  <p>3</p>
+              </div>
+          </li>
+          <li class="form_4_progessbar">
+              <div>
+                  <p>4</p>
+              </div>
+          </li>
+          <li class="form_5_progessbar">
+            <div>
+                <p>5</p>
+            </div>
+          </li>
+          <li class="form_6_progessbar">
+            <div>
+                <p>6</p>
+            </div>
+          </li>
+      </ul>
+  </div>
+<body>
+    <div class="wrapper">
+        <div class="form_wrap">
+            <div class="form_1 data_info">
+                <h2>Terms and Privacy Policy</h2>
+                <div class="input_ra">
+                    <label20>In compliance with R.A. 10173, the Data Privacy Act of 2012, and its implementing Rules and
+                        Regulations, by filling out this form, I hereby give consent to MSU-IIT, to store and use my
+                        data for the research project entitled A Predictive Analytics and Segmentation Approach to
+                        Student Admission Profiling.</label20><br>
+                    <div class="input_ph">
+                        <input type="radio" id="yes" name="ra" value="yes">
+                        <label for="male">Yes</label><br>
+                        <input type="radio" id="no" name="ra" value="no">
+                        <label for="female">No</label><br>
+                    </div>
+                </div>
+            </div>
+            <div class="form_2 data_info" style="display: none;">
+                <h2> Student Personal Information</h2>
+                <form>
+                    <div class="form_container">
+                        <div class="input_wrap">
+                            <label for="text">SURNAME</label>
+                            <input type="text" name="Email Address" class="input" id="text" required>
+                        </div>
+                        <div class="input_wrap">
+                            <label for="text">FIRST NAME</label>
+                            <input type="text" name="firstname" class="input" id="firstname" required>
+                        </div>
+                        <div class="input_wrap">
+                            <label for="confirm_password">MIDDLE NAME</label>
+                            <input type="text" name="middle_name" class="input" id="middle_name" required>
+                        </div>
+                        <div class="input_grade">
+                            <label1>GRADE:</label1><br>
+                            <input type="radio" id="grade11" name="grade" value="grade11">
+                            <label for="grade11">Grade 11</label><br>
+                            <input type="radio" id="grade12" name="grade" value="grade12">
+                            <label for="grade12">Grade 12</label><br>
+                        </div>
+                        <div class="input_gender">
+                            <label2>SEX:</label2><br>
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label><br>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label><br>
+                        </div>
+                        <div class="input_GENDER">
+                            <label3>Do you belong to?</label3><br>
+                            <input type="radio" id="Male" name="Gender" value="Male">
+                            <label for="Male">Male</label><br>
+                            <input type="radio" id="Female" name="Gender" value="Female">
+                            <label for="Female">Female</label><br>
+                            <input type="radio" id="lgbtqia+" name="Gender" value="lgbtqia+">
+                            <label for="lgbtqia+">LGBTQIA+</label><br>
+                        </div>
+                        <div class="input_wrap">
+                            <label for="text">AGE:</label>
+                            <input type="text" name="age" class="input" id="firstname" required>
+                        </div>
+                        <div class="input_religion">
+                            <label4 for="religion">RELIGION:</label4>
+                            <select id="religion" name="religion">
+                                <option value="religion">Christianity</option>
+                                <option value="religion">Islam</option>
+                                <option value="religion">Hinduism</option>
+                                <option value="religion">Buddhism</option>
+                                <option value="religion">Judaism</option>
+                            </select>
+                        </div>
+                        <div class="input_wrap">
+                            <form>
+                                <label for="Country">Region:</label>
+                                <select id="Country"></select><br><br>
+                                <label for="State">Province:</label>
+                                <select id="State" disabled></select><br><br>
+                                <label for="City">municipality/City:</label>
+                                <select id="City" disabled></select><br><br>
+                                <label for="Zip">Zip Code:</label>
+                                <select id="Zip" disabled></select><br><br>
+                            </form>
+                        </div>
+                        <div class="input_shstype">
+                            <label7>Senior High School Type:</label7><br>
+                            <input type="radio" id="public" name="shstype" value="public">
+                            <label for="public">Public</label><br>
+                            <input type="radio" id="private" name="shstype" value="private">
+                            <label for="private">Private</label><br>
+                            <input type="radio" id="homeschool" name="shstype" value="homeschool">
+                            <label for="homeschool">Homeschool</label><br>
+                        </div>
+                        <div class="input_strand">
+                            <label8>Strand:</label8><br>
+                            <input type="radio" id="STEM" name="strand" value="STEM">
+                            <label for="STEM">STEM</label><br>
+                            <input type="radio" id="ABM" name="strand" value="ABM">
+                            <label for="ABM">ABM</label><br>
+                            <input type="radio" id="HUMSS" name="strand" value="HUMSS">
+                            <label for="HUMSS">HUMSS</label><br>
+                            <input type="radio" id="GAS" name="strand" value="GAS">
+                            <label for="GAS">GAS</label><br>
+                            <input type="radio" id="TVL" name="strand" value="TVL">
+                            <label for="TVL">TVL</label><br>
+                            <input type="radio" id="Sports" name="strand" value="Sports">
+                            <label for="Sports">Sports</label><br>
+                            <input type="radio" id="Arts_and_Design" name="strand" value="Arts_and_Design">
+                            <label for="Arts_and_Design">Arts and Design</label><br>
+                        </div>
+                            
+                        </div>
+                    </form>
+              </div>
+                <div class="form_3 data_info" style="display: none;">
+                    <h2>father's personal information</h2>
+                    <form>
+                        <div class="input_fathereduc">
+                            <label9 for="fathereduc">Father's Highest Educational Attainment:</label9>
+                            <select id="fathereduc" name="fathereduc">
+                                <option value="Choose">Choose</option>
+                                <option value="Elementary Level">Elementary Level</option>
+                                <option value="Elementary Graduate">Elementary Graduate</option>
+                                <option value="High School Level">High School Level</option>
+                                <option value="High School Graduate">High School Graduate</option>
+                                <option value="College Level">College Level</option>
+                                <option value="College Graduate">College Graduate</option>
+                                <option value="Post Baccalaureate">Post Baccalaureate</option>
+                            </select>
+                        </div>   
+                        <div class="input_fatherrel">
+                            <label10 for="fatherrel">Father's Religious Affiliation:</label10>
+                            <select id="fatherrel" name="fatherrel">
+                                <option value="Choose">Choose</option>
+                                <option value="Roman Catholic">Roman Catholic</option>
+                                <option value="Islam">Islam</option>
+                                <option value="Iglesia ni Cristo">Iglesia ni Cristo</option>
+                                <option value="Iglesia Filipina Independiente">Iglesia Filipina Independiente</option>
+                                <option value="Jehovah's Witnesses">Jehovah's Witnesses</option>
+                                <option value="United Church of Christ in the Philippines">United Church of Christ in the Philippines</option>
+                                <option value="Seventh-day Adventist">Seventh-day Adventist</option>
+                                <option value="Christian">Christian</option>
+                                <option value="Aglipay">Aglipay</option>
+                                <option value="Bible Baptist Church">Bible Baptist Church</option>
+                                <option value="Church of Christ">Church of Christ</option>
+                            </select>
+                        </div>
+                        <div class="input_fatherethnicity">
+                            <label11 for="fatherethnicity">Father's Ethnicity:</label11>
+                            <select id="fatherethnicity" name="fatherethnicity">
+                                <option value="Choose">Choose</option>
+                                <option value="Cebuano">Cebuano</option>
+                                <option value="Meranao">Meranao</option>
+                                <option value="Maguindanao">Maguindanao</option>
+                                <option value="Tausug">Tausug</option>
+                                <option value="Manobo">Manobo</option>
+                                <option value="Higaonon">Higaonon</option>
+                                <option value="Ilonggo">Ilonggo</option>
+                            </select>
+                        </div>
+                        <div class="input_fatheroccupation">
+                            <label12 for="fatheroccupation">Father's Occupation:</label12>
+                            <select id="fatheroccupation" name="fatheroccupation">
+                                <option value="Choose">Choose</option>
+                                <option value="Managers (Chief Executive Officer, General Manager, Operations Manager, Finance Manager)">Managers (Chief Executive Officer, General Manager, Operations Manager, Finance Manager)</option>
+                                <option value="Professionals (Accountant, Architect, Engineer, Doctor, Teacher, Lawyer)">Professionals (Accountant, Architect, Engineer, Doctor, Teacher, Lawyer)</option>
+                                <option value="Technicians and Associate Professionals (Medical Technologist, Civil Engineering Technician, Computer Programmer, Legal Associate)">Technicians and Associate Professionals (Medical Technologist, Civil Engineering Technician, Computer Programmer, Legal Associate)</option>
+                                <option value="Clerical Support Workers(Secretary, Administrative Assistant, Data Entry Clerk)">Clerical Support Workers(Secretary, Administrative Assistant, Data Entry Clerk)</option>
+                                <option value="Service and Sales Workers (Waiter/Waitress, Customer Service Representative, Sales Clerk, Barber/Hairstylist)">Service and Sales Workers (Waiter/Waitress, Customer Service Representative, Sales Clerk, Barber/Hairstylist)</option>
+                                <option value="Skilled Agricultural, Forestry, and Fishery Workers (Farmer, Forestry Worker, Fisherfolk)">Skilled Agricultural, Forestry, and Fishery Workers (Farmer, Forestry Worker, Fisherfolk)</option>
+                                <option value="Craft and Related Trades Workers (Electrician, Plumber, Welder, Tailor, Carpenter)">Craft and Related Trades Workers (Electrician, Plumber, Welder, Tailor, Carpenter)</option>
+                                <option value="Plant and Machine Operators and Assemblers (Machine Operator, Crane Operator, Production Worker)">Plant and Machine Operators and Assemblers (Machine Operator, Crane Operator, Production Worker)</option>
+                                <option value="Elementary Occupations (Janitor/Cleaner, Construction Laborer, Domestic Helper)">Elementary Occupations (Janitor/Cleaner, Construction Laborer, Domestic Helper)</option>
+                                <option value="Armed forces occupations">Armed forces occupations</option>
+                            </select>
+                        </div>
+                        <div class="input_fatherincome">
+                            <label13 for="fatherincome">Father's Income Bracket:</label13>
+                            <select id="fatherincome" name="fatherincome">
+                                <option value="Choose">Choose</option>
+                                <option value="Less than ₱12,082 (Minimum Wage Earners)">Less than ₱12,082 (Minimum Wage Earners)</option>
+                                <option value="Between ₱12,082 and ₱24,164 (Low-Income Earners)">Between ₱12,082 and ₱24,164 (Low-Income Earners)</option>
+                                <option value="Between ₱24,164 and ₱48,328 (Lower Middle-Income Earners)">Between ₱24,164 and ₱48,328 (Lower Middle-Income Earners)</option>
+                                <option value="Between ₱48,328 and ₱84,574 (Middle-Income Earners)">Between ₱48,328 and ₱84,574 (Middle-Income Earners)</option>
+                                <option value="Between ₱84,574 and ₱144,984 (Upper Middle-Income Earners)">Between ₱84,574 and ₱144,984 (Upper Middle-Income Earners)</option>
+                                <option value="Above ₱144,984 (High Income-Earners)">Above ₱144,984 (High Income-Earners)</option>
+                            </select>
+                        </div>
+                        
+                    </form>
+                </div>
+                <div class="form_4 data_info" style="display: none;">
+                    <h2>mother's personal information</h2>
+                    <form>
+                        <div class="input_mothereduc">
+                            <label14 for="mothereduc">Mother's Highest Educational Attainment:</label14>
+                            <select id="mothereduc" name="mothereduc">
+                                <option value="Choose">Choose</option>
+                                <option value="Elementary Level">Elementary Level</option>
+                                <option value="Elementary Graduate">Elementary Graduate</option>
+                                <option value="High School Level">High School Level</option>
+                                <option value="High School Graduate">High School Graduate</option>
+                                <option value="College Level">College Level</option>
+                                <option value="College Graduate">College Graduate</option>
+                                <option value="Post Baccalaureate">Post Baccalaureate</option>
+                            </select>
+                        </div>
+                        <div class="input_motherrel">
+                            <label15 for="motherrel">Mother's Religious Affiliation:</label15>
+                            <select id="motherrel" name="motherrel">
+                                <option value="Choose">Choose</option>
+                                <option value="Roman Catholic">Roman Catholic</option>
+                                <option value="Islam">Islam</option>
+                                <option value="Iglesia ni Cristo">Iglesia ni Cristo</option>
+                                <option value="Iglesia Filipina Independiente">Iglesia Filipina Independiente</option>
+                                <option value="Jehovah's Witnesses">Jehovah's Witnesses</option>
+                                <option value="United Church of Christ in the Philippines">United Church of Christ in the Philippines</option>
+                                <option value="Seventh-day Adventist">Seventh-day Adventist</option>
+                                <option value="Christian">Christian</option>
+                                <option value="Aglipay">Aglipay</option>
+                                <option value="Bible Baptist Church">Bible Baptist Church</option>
+                                <option value="Church of Christ">Church of Christ</option>
+                            </select>
+                        </div>
+                        <div class="input_motherethnicity">
+                            <label16 for="motherethnicity">Mother's Ethnicity:</label16>
+                            <select id="motherethnicity" name="motherethnicity">
+                                <option value="Choose">Choose</option>
+                                <option value="Cebuano">Cebuano</option>
+                                <option value="Meranao">Meranao</option>
+                                <option value="Maguindanao">Maguindanao</option>
+                                <option value="Tausug">Tausug</option>
+                                <option value="Manobo">Manobo</option>
+                                <option value="Higaonon">Higaonon</option>
+                                <option value="Ilonggo">Ilonggo</option>
+                            </select>
+                        </div>
+                        <div class="input_motheroccupation">
+                            <label17 for="motheroccupation">Mother's Occupation:</label17>
+                            <select id="motheroccupation" name="motheroccupation">
+                                <option value="Choose">Choose</option>
+                                <option value="Managers (Chief Executive Officer, General Manager, Operations Manager, Finance Manager)">Managers (Chief Executive Officer, General Manager, Operations Manager, Finance Manager)</option>
+                                <option value="Professionals (Accountant, Architect, Engineer, Doctor, Teacher, Lawyer)">Professionals (Accountant, Architect, Engineer, Doctor, Teacher, Lawyer)</option>
+                                <option value="Technicians and Associate Professionals (Medical Technologist, Civil Engineering Technician, Computer Programmer, Legal Associate)">Technicians and Associate Professionals 
+                                    (Medical Technologist, Civil Engineering Technician, Computer Programmer, Legal Associate)</option>
+                                <option value="Clerical Support Workers(Secretary, Administrative Assistant, Data Entry Clerk)">Clerical Support Workers(Secretary, Administrative Assistant, Data Entry Clerk)</option>
+                                <option value="Service and Sales Workers (Waiter/Waitress, Customer Service Representative, Sales Clerk, Barber/Hairstylist)">Service and Sales Workers (Waiter/Waitress, Customer Service Representative, Sales Clerk, Barber/Hairstylist)</option>
+                                <option value="Skilled Agricultural, Forestry, and Fishery Workers (Farmer, Forestry Worker, Fisherfolk)">Skilled Agricultural, Forestry, and Fishery Workers (Farmer, Forestry Worker, Fisherfolk)</option>
+                                <option value="Craft and Related Trades Workers (Electrician, Plumber, Welder, Tailor, Carpenter)">Craft and Related Trades Workers (Electrician, Plumber, Welder, Tailor, Carpenter)</option>
+                                <option value="Plant and Machine Operators and Assemblers (Machine Operator, Crane Operator, Production Worker)">Plant and Machine Operators and Assemblers (Machine Operator, Crane Operator, Production Worker)</option>
+                                <option value="Elementary Occupations (Janitor/Cleaner, Construction Laborer, Domestic Helper)">Elementary Occupations (Janitor/Cleaner, Construction Laborer, Domestic Helper)</option>
+                                <option value="Armed forces occupations">Armed forces occupations</option>
+                            </select>
+                        </div>
+                        <div class="input_motherincome">
+                            <label18 for="motherincome">Mother's Income Bracket:</label18>
+                            <select id="motherincome" name="motherincome">
+                                <option value="Choose">Choose</option>
+                                <option value="Less than ₱12,082 (Minimum Wage Earners)">Less than ₱12,082 (Minimum Wage Earners)</option>
+                                <option value="Between ₱12,082 and ₱24,164 (Low-Income Earners)">Between ₱12,082 and ₱24,164 (Low-Income Earners)</option>
+                                <option value="Between ₱24,164 and ₱48,328 (Lower Middle-Income Earners)">Between ₱24,164 and ₱48,328 (Lower Middle-Income Earners)</option>
+                                <option value="Between ₱48,328 and ₱84,574 (Middle-Income Earners)">Between ₱48,328 and ₱84,574 (Middle-Income Earners)</option>
+                                <option value="Between ₱84,574 and ₱144,984 (Upper Middle-Income Earners)">Between ₱84,574 and ₱144,984 (Upper Middle-Income Earners)</option>
+                                <option value="Above ₱144,984 (High Income-Earners)">Above ₱144,984 (High Income-Earners)</option>
+                            </select>
+                        </div>
+                        
+                    </form>
+                </div>
+                <div class="form_5 data_info" style="display: none">
+                  <form id="grid-form">
+                    <h3>Academic Records</h3>
+                    <h4>INSTRUCTION: Please indicate the corresponding grade on the following subjects. If you have not yet taken the subject/s, please type N/A.</h4>
+                
+                    <label for="studentName">Student Name:</label>
+             
+                    <input class="form_5_input" type="text" id="studentName" name="studentName" required>
+                
+                
+                    <div class="table-container">
+                      <div class="table-cell">
+                        <div class="label1">
+                          <label for="JuniorHighSchool">Junior High School Average Grade:</label>
+                  
+                          <input class="form_5_input" type="text" id="JuniorHighSchool" pattern="[0-9]{2}|N/A" required>
+                          <p class="validationMessage"></p>
+                    </div>
+                  </div>
+                  <div class="table-cell">
+                    <div class="label1">
+                        <label  for="numberInput2">Grade 11 Average Grade (First Semester)</label>
+                        
+                        <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                        <p class="validationMessage"></p>
+                      </div>
+                    </div>
+
+                      <div class="table-cell">
+                        <div class="label1">
+
+                        <label  for="numberInput3">Grade 11 Average Grade (Second Semester)</label>
+                        
+                        <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                        <p class="validationMessage"></p>
+                      </div>
+                      </div>
+
+                      <div class="table-cell">
+                        <div class="label1">
+                        <label for="number">Grade 12 Average Grade (First Semester)</label>
+                        
+                        <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                        <p class="validationMessage"></p>
+                        </div>
+                      </div>
+                
+                      <div class="table-cell">
+                        <div class="label1">
+                        <label for="number">Grade 12 Average Grade (Second Semester)</label>
+                    
+                        <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                        <p class="validationMessage"></p>
+                      </div>
+                      </div>
+
+                      <div class="table-cell">
+                        <div class="label1">
+                        <label for="number">Oral Communication</label>
+                       
+                        <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                        <p class="validationMessage"></p>
+                        </div>
+                      </div>
+                
+                      <div class="table-cell">
+                        <div class="label1">
+                        <label for="number">Reading and Writing</label>
+             
+                        <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                        <p class="validationMessage"></p>
+                        </div>
+                      </div>
+                    <div class="table-cell">
+                      <div class="label1">
+                      <label for="number">General Mathematics</label>
+               
+                      <input class="form_5_input" type="text" class="numberInput" id="generalMath" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+
+                    <div class="table-cell">
+                      <div class="label1">
+                      <label for="number">Statistics and Probability</label>
+       
+                      <input class="form_5_input" type="text" class="numberInput" id="statsProb" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+
+                    <div class="table-cell">
+                      <div class="label1">
+                      <label for="number">Earth and Life Science</label>
+        
+                      <input class="form_5_input" type="text" class="numberInput" id="earthLifeSci" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+                
+                    <div class="table-cell">
+                      <div class="label1">
+                      <label for="number">Earth Science</label>
+    
+                      <input class="form_5_input" type="text" class="numberInput" id="earthSci" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+
+                    <div class="table-cell">
+                      <div class="label1">
+                      <label for="number">Physical Science</label>
+                 
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">Earth Science</label>
+             
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                  </div>
+
+                  <div class="table-cell page-break">
+                    <div class="label1">
+                      <label for="number">Personal Development</label>
+                   
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">Media and Information Literacy</label>
+        
+                      <input class="form_5_input" type="text" name="numberInput" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A"required>
+                      <p class="validationMessage"></p>
+                  </div>
+                  </div>
+
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">Introduction To The Philosophy Of The Human Person</label>
+          
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">Understanding Culture, Society, and Politics</label>
+                
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">Disaster Readiness And Risk Reduction</label>
+                     
+                      <input class="form_5_input"  type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+                    
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">Contemporary Philippine Arts From The Regions</label>
+     
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                  </div>
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">21st Century Literature From The Philippines And The World</label>
+               
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">Pagbasa At Pagsusuri Ng Iba't Ibang Teksto Tungo Sa Pananaliksik</label>
+     
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                  </div>
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">Komunikasyon At Pananaliksik Sa Wika At Kulturang Pilipino</label>
+
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">Physical Education And Health</label>
+                 
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">Physical Education And Health 2</label>
+                    
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">Physical Education And Health 3</label>
+             
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">Physical Education And Health 4</label>
+                  
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">Applied Economics Business</label>
+                
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">F1_Fundamentals Of Accountancy Business And Management 1</label>
+              
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">F2_Fundamentals Of Accountancy Business And Management 2</label>
+       
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+                  <div class="table-cell page-break">
+                    <div class="label1">
+                      <label for="number">Business Math</label>
+                
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">Business Finance</label>
+          
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">Organization And Management</label>
+         
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">Principles Of Marketing</label>
+                   
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div> 
+                    </div>
+                
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">Business Marketing</label>
+         
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+                
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">Business Enterprise And Simulation</label>
+              
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+                
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">Pre Calculus</label>
+               
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">Basic Calculus</label>
+                 
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">General Biology 1</label>
+               
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">General Biology 2</label>
+                
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">General Physics 1</label>
+                 
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">General Physics 2</label>
+                    
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">General Chemistry 1</label>
+             
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">General Chemistry 2</label>
+             
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">Humanities 1: Politics</label>
+
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">Humanities 2: Intro</label>
+              
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">Social Sciences 1</label>
+                 
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">Organization And Management 2</label>
+             
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+                  <div class="table-cell page-break">
+                    <div class="label1">
+                      <label for="number">Applied Economics 2</label>
+         
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">Intro To World Religions And Belief Sytems</label>
+        
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">Creative Writing</label>
+           
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">Philippine Politics and Governance</label>
+      
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">Creative Nonfiction</label>
+            
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">Disciplines And Ideas In The Social Sciences</label>
+             
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                  </div>
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">Safety and First Aid</label>
+            
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">Human Movement</label>
+                      <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+                      <p class="validationMessage"></p>
+                    </div>
+                    </div>
+                  <div class="table-cell">
+                    <div class="label1">
+                      <label for="number">Fundamentals Of Coaching</label>
+                    <input class="form_5_input" type="text" class="numberInput" id="numberInput1" pattern="[0-9]{2}|N/A" required>
+               
+                    <p class="validationMessage"></p>
+                  </div>
+                </div>
+                
+                    <label class="signature">Adviser</label>
+                    <span id="adviser"></span>
+                
+                    <label class="signature">Principal</label>
+                    <span id="principal"></span>
+                
+                    <button type="button" id="printBtn" onclick="printDetails()">Print Grades</button>
+                  </form>
+                </div>
+                
+                <div class="form_6" style="display: none;">
+                    <h2>Download and Upload file</h2>
+                    <form>
+                      <div class="container">
+                        <div class="header-section">
+                            <h1>Upload Files</h1>
+                            <p>Upload files you want to share with your team members.</p>
+                            <p>PDF, Images & Videos are allowed.</p>
+                        </div>
+                        <div class="drop-section">
+                            <div class="col">
+                                <div class="cloud-icon">
+                                    <img src="" alt="cloud">
+                                </div>
+                                <span>Drag & Drop your files here</span>
+                                <span>OR</span>
+                                <button class="file-selector">Browse Files</button>
+                                <input type="file" class="file-selector-input" multiple>
+                            </div>
+                            <div class="col">
+                                <div class="drop-here">Drop Here</div>
+                            </div>
+                        </div>
+                        <div class="list-section">
+                            <div class="list-title">Uploaded Files</div>
+                            <div class="list"></div>
+                        </div>
+                        <div class="download-section">
+                            <div class="download-box">
+                                <h2>DOWNLOAD FORM</h2>
+                                <ul class="download-list">
+                                    <li><a href="PRINCIPAL APPROVAL .pdf" download>Form</a></li>
+                                    <!-- Add more files from the 'downloads' folder -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    </form>
+                </div>
+            </div>
+            <div class="btns_wrap">
+                <div class="common_btns form_1_btns">
+                    <button type="button" class="btn_next">Next <span class="icon"><ion-icon name="arrow-forward-sharp"></ion-icon></span></button>
+                </div>
+                <div class="common_btns form_2_btns" style="display: none;">
+                    <button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-back-sharp"></ion-icon></span>Back</button>
+                    <button type="button" class="btn_next">Next <span class="icon"><ion-icon name="arrow-forward-sharp"></ion-icon></span></button>
+                </div>
+                <div class="common_btns form_3_btns" style="display: none;">
+                    <button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-back-sharp"></ion-icon></span>Back</button>
+                    <button type="button" class="btn_next">Next <span class="icon"><ion-icon name="arrow-forward-sharp"></ion-icon></span></button>
+                </div>
+                <div class="common_btns form_4_btns" style="display: none;">
+                  <button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-back-sharp"></ion-icon></span>Back</button>
+                  <button type="button" class="btn_next">Next <span class="icon"><ion-icon name="arrow-forward-sharp"></ion-icon></span></button>
+              </div>
+                <div class="common_btns form_5_btns" style="display: none;">
+                  <button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-back-sharp"></ion-icon></span>Back</button>
+                  <button type="button" class="btn_next">Next <span class="icon"><ion-icon name="arrow-forward-sharp"></ion-icon></span></button>
+              </div>
+              <div class="common_btns form_6_btns" style="display: none;">
+                <a href ="dashboard.html">
+                <button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-back-sharp"></ion-icon></span>Back</button>
+                <button type="button" class="btn_done">Submit</button></a>
+            </div>
+            </div>
+        </div>
+        
+        <div class="modal_wrapper">
+            <div class="shadow"></div>
+            <div class="success_wrap">
+                <span class="modal_icon"><ion-icon name="checkmark-sharp"></ion-icon></span>
+                <p>You have successfully completed the process.</p>
+            </div>
+        </div>
+
+         <script src="notapplicable.js"></script>
+         <script src="form.js"></script>
+         <script src="address.js"></script>
+         <script src="example.js"></script>
+       </body>
+</html>
