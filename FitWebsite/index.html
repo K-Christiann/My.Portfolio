@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife Accessible Gym</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">FitLife Gym</div>
+        <div class="accessibility-controls">
+            <button class="control-btn" id="increaseFontBtn" aria-label="Increase font size">
+                A+
+            </button>
+            <button class="control-btn" id="decreaseFontBtn" aria-label="Decrease font size">
+                A-
+            </button>
+            <button class="control-btn" id="toggleThemeBtn" aria-label="Toggle dark mode">
+                🌙
+            </button>
+        </div>
+    </header>
+
+  <section class="hero-section">
+        <div class="hero-content">
+            <h1>Transform Your Life</h1>
+            <p>Join FitLife Gym and start your fitness journey today with expert guidance and support.</p>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <section class="section" id="workouts">
+            <h2>Featured Workouts</h2>
+            <div class="workout-grid">
+                <div class="workout-card" data-workout="beginner">
+                    <img src="/api/placeholder/400/200" alt="Beginner workout demonstration">
+                    <h3>Beginner's Guide</h3>
+                    <p>Perfect for those just starting their fitness journey. Learn proper form and basic exercises.</p>
+                </div>
+                <div class="workout-card" data-workout="strength">
+                    <img src="/api/placeholder/400/200" alt="Strength training exercise">
+                    <h3>Strength Training</h3>
+                    <p>Build muscle and increase strength with our comprehensive weight training program.</p>
+                </div>
+                <div class="workout-card" data-workout="cardio">
+                    <img src="/api/placeholder/400/200" alt="Cardio workout session">
+                    <h3>Cardio Blast</h3>
+                    <p>Improve your endurance and heart health with our high-energy cardio workouts.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews-section" id="reviews">
+            <h2>Member Reviews</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="./Assets/Images/squishy-women-s-day-art.jpg" alt="Reviewer avatar" class="reviewer-avatar">
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p>"Amazing trainers and supportive community. I've achieved results I never thought possible!"</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="./Assets/Images/squishy-women-s-day-art.jpg" alt="Reviewer avatar" class="reviewer-avatar">
+                        <div>
+                            <h4>Mike Thompson</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p>"The personalized attention from coaches has helped me stay motivated and reach my goals."</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="./Assets/Images/squishy-women-s-day-art.jpg" alt="Reviewer avatar" class="reviewer-avatar">
+                        <div>
+                            <h4>Lisa Chen</h4>
+                            <div class="stars">★★★★☆</div>
+                        </div>
+                    </div>
+                    <p>"Great facilities and flexible class schedules. Perfect for busy professionals!"</p>
+                </div>
+            </div>
+            <button class="add-review-btn" id="addReviewBtn">Add Your Review</button>
+        </section>
+    </main>
+
+    <div class="review-modal" id="reviewModal">
+        <div class="modal-content">
+            <h3>Share Your Experience</h3>
+            <form class="review-form" id="reviewForm">
+                <input type="text" placeholder="Your Name" required>
+                <select required>
+                    <option value="">Select Rating</option>
+                    <option value="5">★★★★★</option>
+                    <option value="4">★★★★☆</option>
+                    <option value="3">★★★☆☆</option>
+                    <option value="2">★★☆☆☆</option>
+                    <option value="1">★☆☆☆☆</option>
+                </select>
+                <textarea placeholder="Your Review" required></textarea>
+                <button type="submit" class="add-review-btn">Submit Review</button>
+                <button type="button" class="control-btn" onclick="closeReviewModal()">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>📍 123 Fitness Street</li>
+                    <li>📞 (123) 456-789</li>
+                    <li>✉️ info@fitlifegym.com</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#workouts">Workouts</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#coaching">Coaching</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <ul>
+                    <li>Mon-Fri: 5am - 11pm</li>
+                    <li>Sat-Sun: 7am - 9pm</li>
+                    <li>Holidays: 8am - 8pm</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Instagram">📸</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="YouTube">🎥</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 FitLife Gym. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="voice-assistant" id="voiceAssistant" aria-label="Voice Assistant">
+        🎤
+    </button>
+
+    <div class="status-message" id="statusMessage"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
