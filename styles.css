@@ -434,8 +434,11 @@
         .tech-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.5rem;
+            gap: 0.3rem;
             margin-top: auto;
+            position:relative;
+            bottom: 20px;
+            right:0.2rem;
         }
         
         .tech-tag {
@@ -444,4 +447,17 @@
             border-radius: 9999px;
             background-color: rgba(30, 41, 59, 1);
             color: #cbd5e1;
+        }
+        .loader {
+            width: 48px;
+            height: 48px;
+            border: 5px solid var(--primary-color);
+            border-bottom-color: transparent;
+            border-radius: 50%;
+            animation: rotation 1s linear infinite;
+        }
+
+        @keyframes rotation {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
