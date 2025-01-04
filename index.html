@@ -1,14 +1,18 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Portfolio</title>
+    <meta name="description" content="Kyle Christian P. Belono - Frontend Developer Portfolio">
+    <title>Kyle Christian - Frontend Developer</title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="loading-overlay">
+        <div class="loader"></div>
+    </div>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
@@ -93,7 +97,7 @@
         </div>
     </section>
 
-   <!-- Projects Section -->
+    <!-- Projects Section -->
 <section id="projects" class="py-5">
     <div class="container">
         <h2 class="text-center mb-5" style="color: var(--accent-color)">Featured Projects</h2>
@@ -178,18 +182,45 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Project Card 4 -->
+            <!---- Project Card 4 ---->
+        <div class="project-card group">
+            <div class="aspect-video">
+                <img src="./FitWebsite/Assets/Images/preview.png" 
+                     alt="Fitness Website" 
+                     class="card-img">
+            </div>
+            <div class="card-content">
+                <div class="card-header">
+                    <h3 class="gradient-text">FitWebsite</h3>
+                    <a href="./FitWebsite/index.html" 
+                       target="_blank" 
+                       class="external-link"
+                       aria-label="View Motivation Web Poster project">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <p class="card-description">
+                A website for a fitness gym that offers personalized training programs and group classes.
+                Also uses accessibility features for users with disabilities.
+                </p>
+                <div class="tech-tags">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                     </div>
+                 </div>
+              </div>
+                <!-- Project Card 5 -->
             <div class="project-card group">
                 <div class="aspect-video">
-                    <img src="./FitWebsite/Assets/Images/preview.png" 
-                         alt="Fitness Website" 
+                    <img src="./WeatherHub/Preview.png" 
+                         alt="WeatherHub Preview" 
                          class="card-img">
                 </div>
                 <div class="card-content">
                     <div class="card-header">
-                        <h3 class="gradient-text">FitWebsite</h3>
-                        <a href="./FitWebsite/index.html" 
+                        <h3 class="gradient-text">WeatherHub</h3>
+                        <a href="./WeatherHub/index.html" 
                            target="_blank" 
                            class="external-link"
                            aria-label="View Motivation Web Poster project">
@@ -197,16 +228,18 @@
                         </a>
                     </div>
                     <p class="card-description">
-                    A website for a fitness gym that offers personalized training programs and group classes.
-                    Also uses accessibility features for users with disabilities.
+                    WeatherHub is a modern web application designed to provide users with live weather updates, forecasts, and interactive weather maps. Built using HTML, CSS, JavaScript, and various front-end frameworks and libraries like Bootstrap and Leaflet
                     </p>
                     <div class="tech-tags">
                         <span class="tech-tag">HTML</span>
                         <span class="tech-tag">CSS</span>
                         <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Bootstrap</span>
+                        <span class="tech-tag">Leaflet</span>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </div>
 </section>
