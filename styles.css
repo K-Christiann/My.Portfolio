@@ -39,16 +39,10 @@
             -webkit-text-fill-color: transparent;
             animation: titleFloat 3s ease-in-out infinite;
         }
-        .hero-buttons{
-            gap: 5px;
-        }
-        .hero-buttons {
+       .hero-buttons {
             display: flex;
             justify-content: center;
-            gap: 1rem; 
         }
-    
-     
         @media (max-width: 576px) {
             .hero-buttons {
                 flex-direction: column; 
